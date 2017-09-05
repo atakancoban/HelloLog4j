@@ -1,0 +1,53 @@
+2017-09-05 15:04:54,032 [FATAL] [http-nio-8083-exec-6] ..bean.HelloBean                          :37 - Bu bir FATAL mesajý 
+2017-09-05 15:07:24,783 [FATAL] [http-nio-8083-exec-4] ..bean.HelloBean                          :36 - Bu bir FATAL mesajý 
+2017-09-05 16:48:25,952 [TRACE] [http-nio-8083-exec-9] ..bean.HelloBean                          :31 - Bu bir TRACE mesajý 
+2017-09-05 16:48:25,956 [DEBUG] [http-nio-8083-exec-9] ..bean.HelloBean                          :32 - Bu bir DEBUG mesajý 
+2017-09-05 16:48:25,956 [INFO ] [http-nio-8083-exec-9] ..bean.HelloBean                          :33 - Bu bir INFO mesajý 
+2017-09-05 16:48:25,956 [WARN ] [http-nio-8083-exec-9] ..bean.HelloBean                          :34 - Bu bir WARN mesajý 
+2017-09-05 16:48:25,956 [ERROR] [http-nio-8083-exec-9] ..bean.HelloBean                          :35 - Bu bir ERROR mesajý 
+2017-09-05 16:48:25,957 [FATAL] [http-nio-8083-exec-9] ..bean.HelloBean                          :36 - Bu bir FATAL mesajý 
+2017-09-05 16:48:25,958 [ERROR] [http-nio-8083-exec-9] ..bean.HelloBean                          :53 - exceptionTest() mesajý oluþtu. Index: 10, Size: 0
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at bean.HelloBean.exceptionTest(HelloBean.java:50)
+	at bean.HelloBean.onClick(HelloBean.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:247)
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:267)
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
+	at javax.faces.event.MethodExpressionActionListener.processAction(MethodExpressionActionListener.java:147)
+	at javax.faces.event.ActionEvent.processListener(ActionEvent.java:88)
+	at javax.faces.component.UIComponentBase.broadcast(UIComponentBase.java:814)
+	at javax.faces.component.UICommand.broadcast(UICommand.java:300)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
